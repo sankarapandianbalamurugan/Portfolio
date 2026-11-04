@@ -1,0 +1,48 @@
+/* SubTrack showcase only: existing site components remain unmodified. */
+.subtrack-detail-page #showcase .st-slide-experience{grid-column:1/-1;min-width:0;background:#faf9f8;border:1px solid #ede9e6;border-radius:20px;padding:clamp(18px,3.2vw,38px);margin-top:14px;color:#171717}
+.subtrack-detail-page #showcase .st-slide-head,.subtrack-detail-page #showcase .st-slide-footer{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.subtrack-detail-page #showcase .st-slide-head{padding-bottom:23px;border-bottom:1px solid #e7e1de}
+.subtrack-detail-page #showcase .st-slide-overline,.subtrack-detail-page #showcase .st-slide-count,.subtrack-detail-page #showcase .st-slide-screen-label,.subtrack-detail-page #showcase .st-slide-type,.subtrack-detail-page #showcase .st-stack-label,.subtrack-detail-page #showcase .st-device-caption,.subtrack-detail-page #showcase .st-annotation-header span,.subtrack-detail-page #showcase .st-annotation-detail-kicker{font-size:.69rem;font-weight:750;letter-spacing:.11em;line-height:1.5}
+.subtrack-detail-page #showcase .st-slide-overline,.subtrack-detail-page #showcase .st-slide-type,.subtrack-detail-page #showcase .st-slide-count,.subtrack-detail-page #showcase .st-device-caption,.subtrack-detail-page #showcase .st-annotation-header span{color:#88807a}
+.subtrack-detail-page #showcase .st-slide-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,70px);align-items:center;padding:35px 0;min-width:0}
+.subtrack-detail-page #showcase .st-slide-visual{display:flex;align-items:center;flex-direction:column;justify-content:center;min-width:0}
+.subtrack-detail-page #showcase .st-slide-mobile-surface{width:100%;min-height:600px;background:#f0eeeb;border:1px solid #e9e4df;border-radius:18px;display:flex;align-items:center;justify-content:center;padding:38px 20px}
+.subtrack-detail-page #showcase .st-slide-phone{background:#222;padding:9px;border-radius:38px;border:2px solid #393939;box-shadow:0 18px 32px rgba(22,20,19,.15),0 3px 8px rgba(22,20,19,.12);width:min(100%,274px);position:relative;overflow:hidden;flex:none}
+.subtrack-detail-page #showcase .st-slide-image-wrap{position:relative;border-radius:29px;overflow:hidden;background:#fff}
+.subtrack-detail-page #showcase #st-slide-image{width:100%;height:auto;aspect-ratio:588/1280;object-fit:contain;display:block;opacity:1;transition:opacity .17s ease}
+.subtrack-detail-page #showcase #st-slide-image.is-switching{opacity:.35}
+.subtrack-detail-page #showcase .st-slide-markers{position:absolute;inset:0;pointer-events:none}
+.subtrack-detail-page #showcase .st-hotspot{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;pointer-events:auto;min-width:31px;min-height:31px;width:31px;height:31px;background:rgba(255,255,255,.96);color:#ce6047;border:2px solid #e56c51;border-radius:50%;box-shadow:0 2px 12px rgba(31,19,14,.2);font-weight:800;font-size:.8rem;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s,transform .2s;z-index:1;padding:0}
+.subtrack-detail-page #showcase .st-hotspot:hover,.subtrack-detail-page #showcase .st-hotspot.is-active{background:#e97258;color:#fff;box-shadow:0 0 0 5px rgba(233,114,88,.20),0 4px 15px rgba(20,10,5,.15);transform:translate(-50%,-50%) scale(1.06)}
+.subtrack-detail-page #showcase .st-hotspot:focus-visible,.subtrack-detail-page #showcase button:focus-visible{outline:2px solid #3262ff;outline-offset:3px}
+.subtrack-detail-page #showcase .st-device-caption{margin-top:17px;text-align:center;font-size:.62rem}
+.subtrack-detail-page #showcase .st-slide-narrative{min-width:0}
+.subtrack-detail-page #showcase .st-slide-meta{display:flex;gap:15px;flex-wrap:wrap;align-items:center}
+.subtrack-detail-page #showcase .st-slide-screen-label,.subtrack-detail-page #showcase .st-stack-label,.subtrack-detail-page #showcase .st-annotation-detail-kicker{color:#d6664d}
+.subtrack-detail-page #showcase .st-slide-narrative h3{font-size:clamp(2rem,3.8vw,3.6rem);line-height:1.08;letter-spacing:-.06em;margin:14px 0 26px}
+.subtrack-detail-page #showcase .st-decision-stack{display:grid;gap:17px;border-bottom:1px solid #e5e0dc;padding-bottom:23px}
+.subtrack-detail-page #showcase .st-decision-stack p{font-size:.94rem;color:#55504d;line-height:1.65;margin:6px 0 0}
+.subtrack-detail-page #showcase .st-annotation-header{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin:23px 0 13px}
+.subtrack-detail-page #showcase .st-annotation-header h4{margin:0;font-size:1rem;letter-spacing:-.02em}
+.subtrack-detail-page #showcase .st-annotation-list{display:grid;gap:9px}
+.subtrack-detail-page #showcase .st-annotation-choice{border:1px solid #e4dfdc;background:#fff;color:#25211e;border-radius:10px;text-align:left;display:flex;align-items:center;gap:12px;padding:12px 13px;width:100%;min-height:50px;cursor:pointer;transition:border .2s,background .2s,transform .2s}
+.subtrack-detail-page #showcase .st-annotation-choice:hover,.subtrack-detail-page #showcase .st-annotation-choice.is-active{border-color:#e7a797;background:#fff7f4}
+.subtrack-detail-page #showcase .st-annotation-choice .st-annotation-index{flex:none;display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#f7e9e4;color:#c86147;font-size:.75rem;font-weight:800}
+.subtrack-detail-page #showcase .st-annotation-choice.is-active .st-annotation-index{background:#e97258;color:#fff}
+.subtrack-detail-page #showcase .st-annotation-choice strong{font-size:.84rem;line-height:1.4}
+.subtrack-detail-page #showcase .st-annotation-detail{background:#fff;border-left:3px solid #e97258;padding:15px 17px;margin-top:13px;min-height:108px;border-radius:0 9px 9px 0}
+.subtrack-detail-page #showcase .st-annotation-detail p{margin:7px 0 0;font-size:.88rem;line-height:1.65;color:#514b48}
+.subtrack-detail-page #showcase .st-slide-footer{border-top:1px solid #e7e1de;padding-top:20px;flex-wrap:wrap}
+.subtrack-detail-page #showcase .st-slide-progress{display:flex;align-items:center;gap:8px}
+.subtrack-detail-page #showcase .st-progress-dot{width:28px;height:7px;border-radius:30px;background:#dcd7d4;border:0;padding:0;cursor:pointer;transition:width .22s,background .22s}
+.subtrack-detail-page #showcase .st-progress-dot.is-active{width:49px;background:#e97258}
+.subtrack-detail-page #showcase .st-slide-arrows{display:flex;align-items:center;gap:9px}
+.subtrack-detail-page #showcase .st-slide-arrow{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:9px;border:1px solid #dcd7d3;background:#fff;color:#24211f;font-weight:650;font-size:.86rem;padding:12px 16px;cursor:pointer;min-height:46px;transition:background .2s,border-color .2s}
+.subtrack-detail-page #showcase .st-slide-arrow:hover{background:#f4f0ee;border-color:#c9c0ba}
+.subtrack-detail-page #showcase .st-slide-arrow-next{background:#171717;color:#fff;border-color:#171717}
+.subtrack-detail-page #showcase .st-slide-arrow-next:hover{background:#292929;border-color:#292929}
+.subtrack-detail-page #showcase .st-slide-arrow svg{width:16px;height:16px}
+.subtrack-detail-page #showcase .st-slide-disclosure{font-size:.75rem;line-height:1.65;color:#817975;margin:15px 0 0}
+@media(max-width:980px){.subtrack-detail-page #showcase .st-slide-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:25px}.subtrack-detail-page #showcase .st-slide-mobile-surface{min-height:530px;padding:26px 12px}.subtrack-detail-page #showcase .st-slide-phone{width:min(100%,230px)}}
+@media(max-width:720px){.subtrack-detail-page #showcase .st-slide-grid{grid-template-columns:1fr;padding:23px 0;gap:27px}.subtrack-detail-page #showcase .st-slide-mobile-surface{min-height:0;padding:25px 12px}.subtrack-detail-page #showcase .st-slide-phone{width:min(100%,245px)}.subtrack-detail-page #showcase .st-slide-narrative h3{font-size:2.35rem}.subtrack-detail-page #showcase .st-slide-type{display:none}.subtrack-detail-page #showcase .st-slide-footer{gap:18px}.subtrack-detail-page #showcase .st-slide-arrows{width:100%;justify-content:space-between}.subtrack-detail-page #showcase .st-slide-arrow{flex:1}.subtrack-detail-page #showcase .st-slide-experience{padding:17px}.subtrack-detail-page #showcase .st-slide-overline{font-size:.61rem}.subtrack-detail-page #showcase .st-slide-count{white-space:nowrap}}
+@media(prefers-reduced-motion:reduce){.subtrack-detail-page #showcase *{transition:none!important;animation:none!important}}

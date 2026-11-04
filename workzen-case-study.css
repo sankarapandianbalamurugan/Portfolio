@@ -6,3 +6,67 @@
 /* Align case-study navigation CTA with shared button system. */
 .wz-case .wz-next { min-height:46px; padding:12px 20px; border-radius:9px; font-size:.9rem; font-weight:650; background:#fff; color:#111; border:1px solid #d9d9d9; }
 .wz-case .wz-next:hover,.wz-case .wz-next:focus-visible {background:#f5f5f5;color:#111;border-color:#bdbdbd;transform:none;}
+
+
+/* Recruiter-friendly UX storytelling · scoped to WorkZen */
+.wz-case .wz-compact{padding-top:72px;padding-bottom:72px}.wz-problem-list{border-top:1px solid #e9e9e9}.wz-problem-list>div{display:flex;gap:20px;padding:18px 0;border-bottom:1px solid #e9e9e9}.wz-problem-list span{font-size:.78rem;color:#3262ff;font-weight:800}.wz-problem-list p{margin:0;line-height:1.6;color:#555}.wz-problem-list strong{color:#111}.wz-story-section>.wz-prose{align-self:end}.wz-interactive,.wz-wfh-journey,.wz-footnote,.wz-final-grid{grid-column:1/-1}.wz-interactive{border:1px solid #e8e8e8;border-radius:16px;margin-top:28px;overflow:hidden;background:white;box-shadow:0 18px 48px rgba(15,25,50,.04)}.wz-story-nav{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:25px 30px;border-bottom:1px solid #ebebeb}.wz-story-kicker,.wz-reason-index{font-size:.72rem;font-weight:800;letter-spacing:.1em;color:#3262ff}.wz-story-nav h3{font-size:clamp(1.3rem,2.4vw,2rem);letter-spacing:-.045em;margin:9px 0 0;line-height:1.15}.wz-story-controls{display:flex;gap:8px;flex-shrink:0}.wz-icon-button{border:1px solid #dedede;border-radius:9px;width:44px;height:44px;background:#fff;cursor:pointer;font-size:1.25rem;color:#111;transition:background .2s,border .2s}.wz-icon-button:hover{background:#f4f6fb;border-color:#aabbef}.wz-story-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.85fr)}.wz-screen-side{padding:24px;background:#fafbfc;min-width:0}.wz-display-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.wz-mode-switch{display:inline-flex;background:#eee;border-radius:9px;padding:4px;gap:2px}.wz-mode-switch button{font:inherit;font-size:.77rem;min-height:35px;padding:7px 13px;border:0;border-radius:7px;background:transparent;color:#666;cursor:pointer}.wz-mode-switch button.is-active{background:#fff;color:#111;box-shadow:0 1px 5px #00000014;font-weight:750}.wz-original-note{font-size:.73rem;color:#858585}.wz-screen-stage{position:relative;aspect-ratio:1.45;background:#eef1f6;border:1px solid #e0e3e8;border-radius:10px;overflow:hidden;isolation:isolate}.wz-screen-image{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}.wz-screen-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}.wz-screen-after{z-index:2;will-change:clip-path}.wz-screen-label{position:absolute;bottom:14px;z-index:4;background:#141414;color:#fff;border-radius:5px;padding:7px 11px;font-size:.68rem;font-weight:800;letter-spacing:.08em}.wz-screen-label-before{left:13px}.wz-screen-label-after{right:13px;background:#3262ff}.wz-screen-stage[data-mode='before'] .wz-screen-label-after,.wz-screen-stage[data-mode='after'] .wz-screen-label-before{display:none}.wz-handle{position:absolute;z-index:5;top:0;bottom:0;width:2px;background:#3262ff;box-shadow:0 0 0 1px #ffffff90;pointer-events:none}.wz-handle span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:#3262ff;color:#fff;font-size:1.05rem;border:3px solid #fff}.wz-screen-stage[data-mode='before'] .wz-handle,.wz-screen-stage[data-mode='after'] .wz-handle{display:none}.wz-hotspot{position:absolute;z-index:6;border:2px solid white;background:#3262ff;color:#fff;border-radius:50%;width:31px;height:31px;display:flex;align-items:center;justify-content:center;font-size:.79rem;font-weight:800;cursor:pointer;box-shadow:0 2px 12px #3262ff60;transform:translate(-50%,-50%)}.wz-hotspot[hidden]{display:none}.wz-hotspot-tip{position:absolute;z-index:8;max-width:min(280px,70%);padding:12px 14px;color:#fff;background:#111;border-radius:8px;font-size:.79rem;line-height:1.5;box-shadow:0 10px 30px #0003}.wz-hotspot-tip[hidden]{display:none}.wz-slider-wrap{display:flex;align-items:center;gap:12px;margin-top:17px;font-size:.78rem;color:#555;font-weight:650}.wz-slider-wrap[hidden]{display:none}.wz-slider-wrap input{flex:1;accent-color:#3262ff;cursor:ew-resize;min-width:0}.wz-reason{padding:28px;border-left:1px solid #ebebeb}.wz-reason-item{display:flex;gap:15px;padding:20px 0;border-bottom:1px solid #ebebeb}.wz-reason-item:first-of-type{margin-top:10px}.wz-reason-symbol{color:#3262ff;font-size:.72rem;font-weight:800;padding-top:4px}.wz-reason-item h4{font-size:.9rem;letter-spacing:-.01em;margin:0 0 7px}.wz-reason-item p{margin:0;color:#626262;line-height:1.58;font-size:.86rem}.wz-story-thumbs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:23px}.wz-story-thumbs button{text-align:left;border:1px solid #e6e6e6;background:white;border-radius:8px;padding:11px;min-height:53px;font:inherit;font-size:.76rem;color:#666;cursor:pointer;line-height:1.35}.wz-story-thumbs button span{color:#3262ff;font-weight:800;margin-right:8px}.wz-story-thumbs button.is-active{background:#eef3ff;border-color:#3262ff;color:#111;font-weight:700}.wz-wfh-journey{border-top:1px solid #e9e9e9;margin-top:28px}.wz-wfh-step{border-bottom:1px solid #e9e9e9}.wz-wfh-step-head{display:flex;gap:23px;width:100%;align-items:center;text-align:left;padding:24px 8px;background:white;border:0;color:#111;font:inherit;cursor:pointer}.wz-step-number{color:#3262ff;font-weight:800;font-size:.86rem}.wz-step-title{flex:1;font-size:clamp(1.06rem,1.8vw,1.45rem);font-weight:720;letter-spacing:-.03em}.wz-step-plus{font-size:1.5rem;font-weight:300;color:#666}.wz-wfh-step-head[aria-expanded='true'] .wz-step-plus{transform:rotate(45deg)}.wz-wfh-step-content{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px;padding:0 8px 28px}.wz-wfh-step-content[hidden]{display:none}.wz-wfh-visual{margin:0;background:#fff;overflow:hidden;border:1px solid #e3e5ea;border-radius:10px;align-self:start}.wz-mini-browser-top{display:flex;align-items:center;gap:16px;padding:10px 13px;border-bottom:1px solid #e8e8e8;background:#fafafa;font-size:.7rem;color:#777}.wz-wfh-visual img{display:block;width:100%;height:auto}.wz-wfh-visual figcaption{font-size:.76rem;color:#777;padding:12px}.wz-wfh-reasons>div{padding:12px 0 15px;border-bottom:1px solid #eee}.wz-wfh-reasons span{color:#3262ff;font-size:.68rem;letter-spacing:.085em;font-weight:800}.wz-wfh-reasons p{font-size:.91rem;line-height:1.55;color:#444;margin:7px 0 0}.wz-footnote{font-size:.8rem;line-height:1.6;color:#858585;margin-top:18px}.wz-final-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px;align-items:start}.wz-final-grid .wz-browser img{max-height:550px;object-fit:contain}.wz-final-grid .wz-browser:hover{transform:none}.wz-case button:focus-visible,.wz-case input:focus-visible{outline:3px solid #3262ff;outline-offset:3px}@media(max-width:1000px){.wz-story-body{grid-template-columns:1fr}.wz-reason{border-left:0;border-top:1px solid #ebebeb}.wz-reason-item{padding:12px 0}.wz-final-grid{grid-template-columns:1fr 1fr}}@media(max-width:700px){.wz-story-nav{padding:18px;align-items:flex-start}.wz-screen-side,.wz-reason{padding:15px}.wz-original-note{display:none}.wz-screen-stage{aspect-ratio:1.15}.wz-wfh-step-content{grid-template-columns:1fr}.wz-final-grid{grid-template-columns:1fr}.wz-story-thumbs{grid-template-columns:1fr 1fr}.wz-story-thumbs button{padding:10px 8px;font-size:.7rem}.wz-mode-switch button{padding:7px 11px}.wz-hotspot-tip{max-width:75%}}@media(prefers-reduced-motion:reduce){.wz-case .wz-handle,.wz-case .wz-screen-after{transition:none!important}}
+
+/* WorkZen comparison viewport containment fix (all four Before/After decisions).
+   Both source screenshots can have very different intrinsic aspect ratios.
+   Keep the entire clipped After canvas opaque so the Before screen never
+   bleeds through letterboxed areas.  Only the comparison area is changed. */
+.wz-case .wz-interactive,
+.wz-case .wz-story-body,
+.wz-case .wz-screen-side {
+  min-width: 0;
+}
+.wz-case .wz-screen-stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1.45;
+  overflow: hidden;
+  isolation: isolate;
+  background: #eef1f6;
+  box-sizing: border-box;
+}
+.wz-case .wz-screen-stage .wz-screen-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef1f6;
+  box-sizing: border-box;
+}
+.wz-case .wz-screen-stage .wz-screen-before { z-index: 1; }
+.wz-case .wz-screen-stage .wz-screen-after {
+  z-index: 2;
+  background: #eef1f6;
+}
+.wz-case .wz-screen-stage .wz-screen-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+  flex: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .wz-case .wz-screen-stage { aspect-ratio: 1.15; }
+}

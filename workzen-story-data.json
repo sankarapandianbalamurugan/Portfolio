@@ -1,0 +1,58 @@
+[
+  {
+    "title": "One overall comment \u2192 Category-level context",
+    "short": "Category comments",
+    "before": "workzen-old-screen-3.png",
+    "after": "workzen-feedback-form-original.png",
+    "problem": "One overall comment could not explain why a specific category received a low rating.",
+    "decision": "Add an optional comment field alongside each of the five rating dimensions.",
+    "benefit": "Employees can connect a rating to the feedback behind it.",
+    "point": "Comments are placed directly below the corresponding rating.",
+    "pos": [
+      56,
+      52
+    ]
+  },
+  {
+    "title": "Decimal scores \u2192 Clearer grades",
+    "short": "Grades, not decimals",
+    "before": "workzen-old-screen-7.png",
+    "after": "workzen-feedback-details-original.png",
+    "problem": "Scores such as 4.2 and 4.5 invited comparisons instead of constructive interpretation.",
+    "decision": "Show performance through A+, A, B+ and B grade labels rather than leading with decimal scores.",
+    "benefit": "Attention shifts from small numerical differences to performance context.",
+    "point": "The redesigned detail view gives the grade a visible position in the header.",
+    "pos": [
+      82,
+      20
+    ]
+  },
+  {
+    "title": "Monthly reviews \u2192 Quarterly cycles",
+    "short": "Monthly to quarterly",
+    "before": "workzen-old-screen-1.png",
+    "after": "workzen-feedback-details-original.png",
+    "problem": "Monthly submissions repeated administrative work before meaningful progress could be assessed.",
+    "decision": "Replace month-based review entry with Q1, Q2, Q3 and Q4 review periods.",
+    "benefit": "Team leads get more time to assess progress, with a clearer review timeline.",
+    "point": "Quarter labels and quarter-specific details replace the earlier month list.",
+    "pos": [
+      57,
+      60
+    ]
+  },
+  {
+    "title": "Locked submissions \u2192 Correctable feedback",
+    "short": "Edit after submission",
+    "before": "workzen-old-screen-6.png",
+    "after": "workzen-new-screen-3.png",
+    "problem": "Submitted reviews could not be corrected if a rating or comment was entered incorrectly.",
+    "decision": "Provide an edit path for authorized team leads after submission.",
+    "benefit": "Corrections can be made without creating a duplicate review.",
+    "point": "The new feedback list supplies contextual actions for managing each review.",
+    "pos": [
+      90,
+      49
+    ]
+  }
+]
