@@ -1,0 +1,50 @@
+/* Premium portfolio motion enhancements — decorative only, no layout/IA changes. */
+:root { --portfolio-ease: cubic-bezier(.22, 1, .36, 1); --portfolio-hover-duration: 360ms; }
+/* Keep entire new device mockup visible, including outer studio framing. */
+.project-list .project-visual:has(img[src^="assets/project-previews/"]) {
+  background:#101013; overflow:hidden; isolation:isolate;
+}
+.project-list .project-visual img[src^="assets/project-previews/"] {
+  display:block; width:100%; height:100%; object-fit:contain; object-position:center;
+  transform:scale(1); backface-visibility:hidden;
+  transition:transform 650ms var(--portfolio-ease),filter 450ms ease;
+}
+.project-list .project-card:hover .project-visual img[src^="assets/project-previews/"],
+.project-list a.project-card:focus-visible .project-visual img[src^="assets/project-previews/"] {
+  transform:scale(1.035);
+}
+/* Gentle image treatment across cards without altering the card geometry. */
+.project-list .project-card .project-visual {transition:filter 350ms ease,box-shadow 350ms ease;}
+.project-list .project-card:hover .project-visual {filter:brightness(1.025);}
+.project-list .project-card .project-view {transition:background-color 240ms ease,border-color 240ms ease,color 240ms ease,transform 300ms var(--portfolio-ease);}
+.project-list a.project-card:hover .project-view,
+.project-list a.project-card:focus-visible .project-view {transform:translateX(3px);}
+/* Navigation, links and standard controls */
+.site-header .nav-links a:not(.nav-resume) {transition:color 230ms ease;}
+.btn, .nav-resume, .footer-socials a, .back-link {transition:background-color 240ms ease,color 240ms ease,border-color 240ms ease,transform 300ms var(--portfolio-ease),box-shadow 300ms ease;}
+.btn-primary,.nav-links .nav-resume {background-color:#000;color:#fff;}
+.btn-primary:hover,.nav-links .nav-resume:hover,.btn-primary:focus-visible,.nav-links .nav-resume:focus-visible {background-color:#222!important;}
+.btn,.nav-resume,.project-view {border-radius:9px;}
+/* Opt-in reveal only on additional static section headings, preserving original reveal selectors. */
+html.portfolio-motion-ready .portfolio-motion-enter {opacity:0;transform:translate3d(0,16px,0);transition:opacity 550ms ease,transform 600ms var(--portfolio-ease);}
+html.portfolio-motion-ready .portfolio-motion-enter.portfolio-motion-visible {opacity:1;transform:none;}
+/* Cross-document fade on browsers that support native same-origin view transitions. */
+@view-transition {navigation:auto;}
+::view-transition-old(root){animation:portfolio-fade-out 150ms ease both;}
+::view-transition-new(root){animation:portfolio-fade-in 210ms ease both;}
+@keyframes portfolio-fade-out {to{opacity:0.96;}}
+@keyframes portfolio-fade-in {from{opacity:0.94;}to{opacity:1;}}
+@media(max-width:760px) {
+  .project-list .project-card:hover .project-visual img[src^="assets/project-previews/"]{transform:none;}
+  .project-list a.project-card:hover .project-view{transform:none;}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important;}
+ .project-list .project-visual img[src^="assets/project-previews/"],
+ .project-list .project-card .project-visual,
+ .project-list .project-card .project-view,
+ .site-header .nav-links a,.btn,.nav-resume,.footer-socials a,.back-link,
+ html.portfolio-motion-ready .portfolio-motion-enter {transition:none!important;transform:none!important;animation:none!important;}
+ html.portfolio-motion-ready .portfolio-motion-enter {opacity:1!important;}
+ ::view-transition-old(root),::view-transition-new(root){animation:none!important;}
+}

@@ -1,0 +1,1 @@
+Magicwall case study: magicwall.html, magicwall.css, magicwall.js, assets/magicwall/*.png; work.html Magicwall card linked. All other HTML/CSS/JS files unchanged. The screenshots are original user-provided 720x1600 PNGs, not recreated.
