@@ -17,7 +17,7 @@
     document.getElementById('recognition-year-heading').textContent=year+' / QUARTERLY RECOGNITION';
     document.getElementById('recognition-summary').textContent=data.summary;
     document.getElementById('recognition-footnote').textContent=data.footnote;
-    recognitionGrid.innerHTML=data.quarters.map(quarter=>'<div class="recognition-quarter-card"><div class="recognition-quarter-card-top"><span>QUARTER '+String(quarter).padStart(2,'0')+'</span><span aria-hidden="true">↗</span></div><strong>A<span>+</span></strong><p>Q'+quarter+' · '+year+'</p></div>').join('');
+    recognitionGrid.innerHTML=data.quarters.map(quarter=>'<div class="recognition-quarter-card"><div class="recognition-quarter-card-top"><span>QUARTER '+String(quarter).padStart(2,'0')+'</span></div><strong>A<span>+</span></strong><p>Q'+quarter+' · '+year+'</p></div>').join('');
   }
   document.querySelectorAll('[data-recognition-year]').forEach(button=>button.addEventListener('click',()=>renderRecognition(button.dataset.recognitionYear)));
 
