@@ -1,0 +1,9 @@
+PORTFOLIO FAVICON & SOCIAL PREVIEW UPDATE
+
+Changes: Adds browser favicon SVG, PNG 16x16/32x32, iOS 180x180 icon, and 1200x630 photo-based homepage Open Graph image. All existing title/description strings are preserved.
+
+Upload PATCH files to GitHub repository root preserving assets/ paths. These HTML pages should replace root-level existing pages. Set GitHub Pages to main / (root); confirm deployment.
+
+Testing: Open https://sankarapandianbalamurugan.github.io/Portfolio/assets/portfolio-social-preview.jpg then the homepage. Use LinkedIn Post Inspector, Facebook Sharing Debugger and a fresh WhatsApp share after deploy. These platforms cache previews. Crawlers must access the public image; live external platform rendering cannot be confirmed before deployment.
+
+Note: The case study social previews use existing project images, not new artwork. Favicon and social preview are exact exported files; the photo is unchanged inside the poster.
