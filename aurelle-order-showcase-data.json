@@ -1,0 +1,191 @@
+[
+  {
+    "src": "order-overview.png",
+    "title": "Order overview & tracking",
+    "problem": "One order can contain several products, while tracking and fulfilment details live at different levels.",
+    "decision": "Keep the order tracking timeline visible above the product and summary panels.",
+    "benefit": "Gives order operations a clear starting point before acting on a particular item.",
+    "hotspots": [
+      [
+        38,
+        15,
+        "Order tracking",
+        "The timeline communicates the overall order state before an action is taken."
+      ],
+      [
+        43,
+        38,
+        "Product details",
+        "Ordered items stay visible as separate records rather than being collapsed into one action."
+      ],
+      [
+        82,
+        54,
+        "Order summary",
+        "Totals and customer context remain close to the item list for quick verification."
+      ]
+    ]
+  },
+  {
+    "src": "item-cancellation.png",
+    "title": "Cancel selected item",
+    "problem": "A whole-order cancellation can affect products a customer still wants.",
+    "decision": "Put the cancellation action and a reason field on the chosen product, with a final confirmation.",
+    "benefit": "Supports more precise cancellations without unnecessarily affecting other items.",
+    "hotspots": [
+      [
+        50,
+        34,
+        "Selected product",
+        "The dialog identifies which exact product is being cancelled."
+      ],
+      [
+        51,
+        55,
+        "Cancellation reason",
+        "A reason keeps the exception understandable when the request is reviewed."
+      ],
+      [
+        59,
+        76,
+        "Explicit confirmation",
+        "The final action is separated from the safe exit to reduce unintended cancellations."
+      ]
+    ]
+  },
+  {
+    "src": "replacement-delivered.png",
+    "title": "Replacement fulfilment",
+    "problem": "The original return and the replacement shipment are different stages of an exchange.",
+    "decision": "Show the replacement product with a dedicated fulfilment timeline and related tracking data.",
+    "benefit": "Makes the replacement stage visible without confusing it with the initial purchase.",
+    "hotspots": [
+      [
+        53,
+        20,
+        "Status timeline",
+        "Shows progress across exchange and replacement delivery stages."
+      ],
+      [
+        38,
+        48,
+        "Original and replacement",
+        "Separates the original product from the replacement record."
+      ],
+      [
+        52,
+        64,
+        "Shipment information",
+        "Delivery and package details remain connected to the replacement."
+      ]
+    ]
+  },
+  {
+    "src": "payment-refund.png",
+    "title": "Payment & refund history",
+    "problem": "Refund status can be hard to interpret when payment details are disconnected from order history.",
+    "decision": "Use a dedicated payment and refund view inside Order Details with relevant transaction details.",
+    "benefit": "Keeps refund actions and completed records reviewable in their order context.",
+    "hotspots": [
+      [
+        50,
+        31,
+        "Payment & refund tab",
+        "Separates financial activity from the order overview."
+      ],
+      [
+        41,
+        51,
+        "Refund details",
+        "Shows the refund record alongside the cancelled item."
+      ],
+      [
+        81,
+        62,
+        "Order context",
+        "Customer and order totals remain available when reviewing a refund."
+      ]
+    ]
+  },
+  {
+    "src": "initiate-refund.png",
+    "title": "Initiate a refund",
+    "problem": "A refund must be associated with the correct cancelled product and amount.",
+    "decision": "Review item and refund details in a focused confirmation dialog before initiating the action.",
+    "benefit": "Encourages verification of the intended refund before submission.",
+    "hotspots": [
+      [
+        48,
+        40,
+        "Refund item",
+        "The dialog displays the cancelled product and its attributes."
+      ],
+      [
+        48,
+        55,
+        "Refund amount",
+        "The payment and refund amounts are visible before confirmation."
+      ],
+      [
+        62,
+        74,
+        "Confirm refund",
+        "The action explicitly records the decision to initiate a refund."
+      ]
+    ]
+  },
+  {
+    "src": "manual-cod-refund.png",
+    "title": "Record manual COD refund",
+    "problem": "Cash-on-delivery refunds cannot rely on the same automated payment reversal path.",
+    "decision": "Capture UPI or bank-transfer details, a transaction reference and the refund date when recording a manual refund.",
+    "benefit": "Leaves a traceable payment record for an otherwise manual process.",
+    "hotspots": [
+      [
+        44,
+        45,
+        "Payment method",
+        "The operator selects the appropriate manual refund channel."
+      ],
+      [
+        45,
+        60,
+        "Transaction reference",
+        "A UPI or bank-transfer reference supports reconciliation."
+      ],
+      [
+        53,
+        75,
+        "Record the refund",
+        "Confirmation follows the payment details rather than just changing a status."
+      ]
+    ]
+  },
+  {
+    "src": "order-delay.png",
+    "title": "Order delay exception",
+    "problem": "A delayed order needs an explicit explanation so fulfilment status is not ambiguous.",
+    "decision": "Use a focused order-delay dialog to record a reason and optional description.",
+    "benefit": "Makes order-level exceptions easier to interpret and communicate.",
+    "hotspots": [
+      [
+        50,
+        40,
+        "Delay reason",
+        "A reason is required for the exception."
+      ],
+      [
+        51,
+        53,
+        "Additional context",
+        "The description can capture details beyond the reason category."
+      ],
+      [
+        61,
+        67,
+        "Mark as delayed",
+        "The state change is an explicit, reviewable action."
+      ]
+    ]
+  }
+]

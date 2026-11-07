@@ -1,0 +1,16 @@
+/* Shared Previous / Next project navigation — isolated from case study components */
+.portfolio-project-navigation { background:#fff; padding:clamp(38px,6vw,88px) 0; border-top:1px solid #ededed; }
+.portfolio-project-navigation__inner { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(12px,2.5vw,30px); }
+.portfolio-project-navigation__link { display:flex; align-items:center; gap:18px; min-width:0; padding:clamp(18px,3vw,28px); border:1px solid #e5e5e5; border-radius:10px; color:#171717; text-decoration:none; background:#fff; transition:border-color .25s ease,background-color .25s ease,box-shadow .25s ease; }
+.portfolio-project-navigation__link--previous { grid-column:1; justify-content:flex-start; text-align:left; }
+.portfolio-project-navigation__link--next { grid-column:2; justify-content:flex-end; text-align:right; }
+.portfolio-project-navigation__copy { display:flex; flex-direction:column; gap:8px; min-width:0; }
+.portfolio-project-navigation__label { color:#777; font-size:.78rem; font-weight:650; letter-spacing:.08em; text-transform:uppercase; }
+.portfolio-project-navigation__name { color:#171717; font-size:clamp(1.1rem,2vw,1.55rem); line-height:1.25; font-weight:700; overflow-wrap:anywhere; }
+.portfolio-project-navigation__arrow { font-size:1.5rem; line-height:1; flex:none; transition:transform .25s ease; }
+.portfolio-project-navigation__link:hover { background:#fafafa; border-color:#bababa; box-shadow:0 6px 22px rgba(0,0,0,.04); }
+.portfolio-project-navigation__link--previous:hover .portfolio-project-navigation__arrow { transform:translateX(-4px); }
+.portfolio-project-navigation__link--next:hover .portfolio-project-navigation__arrow { transform:translateX(4px); }
+.portfolio-project-navigation__link:focus-visible { outline:3px solid #6474eb; outline-offset:4px; }
+@media(max-width:650px) { .portfolio-project-navigation { padding:36px 0; } .portfolio-project-navigation__inner { grid-template-columns:1fr; gap:12px; } .portfolio-project-navigation__link--previous,.portfolio-project-navigation__link--next { grid-column:1; } .portfolio-project-navigation__link { padding:18px; } }
+@media(prefers-reduced-motion:reduce) { .portfolio-project-navigation__link,.portfolio-project-navigation__arrow { transition:none!important; } }

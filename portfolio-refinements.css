@@ -1,0 +1,69 @@
+/* 2026 portfolio refinements: shared styling only; no changes to screenshot content or behavior */
+:root { --refine-radius: 10px; --refine-ease: cubic-bezier(.22,1,.36,1); }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+.section { padding-block: clamp(58px,6.5vw,88px); }
+.section-head { margin-bottom: clamp(22px,3vw,32px); }
+.about-page-section { padding-block: clamp(56px,6.5vw,88px); }
+.about-page-hero { padding-block: clamp(54px,6.5vw,92px); }
+.wz-case .wz-section, .st-case .st-section, .au-page .au-section, .mw-page .mw-section, .ds-page .ds-section { scroll-margin-top: 90px; }
+/* Small consistent radii for functional surfaces, not device screens */
+.project-card, .project-visual, .project-visual img, .cert-card, .about-tool-group, .contact-section .btn,
+.wz-case article, .st-case article, .au-page article, .mw-panel, .ds-panel,
+.ds-component-item, .ds-gallery, .recognition-records { border-radius: var(--refine-radius); }
+.btn, a.btn, button.btn, .project-view, .nav-resume { border-radius: 8px; }
+.btn-primary:hover, a.btn-primary:hover { background: #222; border-color: #222; }
+.project-card, .tool-brand-chip, .footer-socials a { transition: transform 280ms var(--refine-ease), border-color 280ms ease, box-shadow 280ms ease, background 280ms ease; }
+.project-card:hover { transform: translateY(-3px); }
+.project-visual { overflow: hidden; }
+.project-visual img { object-fit: contain; max-width:100%; }
+.project-visual img { transition: transform 450ms var(--refine-ease); }
+.project-card:hover .project-visual img { transform: scale(1.025); }
+/* Distinct editorial About hero: left image, right narrative, no homepage-style duplication */
+.about-editorial-hero .about-page-grid { grid-template-columns: minmax(245px,.65fr) minmax(0,1.25fr); gap: clamp(30px,5vw,85px); }
+.about-editorial-hero .about-portrait { order: -1; aspect-ratio: 4/5; border-radius: 10px; max-height: 570px; }
+.about-editorial-hero .about-page-grid h1 { font-size: clamp(3.15rem,6vw,6.1rem); }
+.about-editorial-hero .about-page-grid h1 em { color: #555; }
+.about-editorial-hero .eyebrow { margin-bottom: 24px; }
+.about-tool-items .tool-brand-chip { cursor: default; background: #fff; border-radius: 9px; }
+.about-tool-items .tool-brand-chip:hover { transform: translateY(-3px) scale(1.015); background: #fafafa; border-color: #d6d6d6; box-shadow: 0 8px 20px rgba(0,0,0,.035); }
+.about-tool-items .tool-brand-chip img { width: 23px; height: 23px; flex: 0 0 23px; object-fit: contain; }
+.about-tool-items .tool-brand-chip .tool-js-icon { background:#f7df1e; padding:2px; border-radius:3px; }
+.footer-socials a { display:inline-flex; align-items:center; gap:9px; }
+.footer-socials a:hover { transform: translateY(-2px); }
+.footer-socials img.social-brand-logo { display:block; width:22px; height:22px; object-fit:contain; }
+/* About contact is now reused consistently across every page */
+.contact-section { background: var(--contact-bg, #f7f7f7) !important; }
+.contact-section .contact-grid { align-items: center; }
+.contact-section .contact-grid h2 { max-width: 17ch; }
+/* Design System interactive notes: external, aligned and clearly numbered without masking Figma screens */
+.ds-gallery-notes { position:relative; }
+.ds-gallery-note { transition: background 220ms ease, border-color 220ms ease, transform 220ms var(--refine-ease); }
+.ds-gallery-note:hover { transform: translateX(3px); }
+@media(max-width: 850px) {
+ .about-editorial-hero .about-page-grid { grid-template-columns:1fr; gap:28px; }
+ .about-editorial-hero .about-portrait { order:0; max-width: 440px; aspect-ratio: 5/4; }
+ .section { padding-block: 64px; }
+ .contact-section .contact-grid { grid-template-columns: 1fr; gap:22px; }
+}
+@media(max-width: 600px) {
+ .section, .about-page-section { padding-block: 54px; }
+ .contact-section .contact-actions { gap:10px; }
+ .contact-section .contact-actions .btn { flex:1 1 auto; justify-content:center; }
+ .about-editorial-hero .about-page-grid h1 { font-size: clamp(2.8rem,10vw,4.3rem); }
+ .about-editorial-hero .about-portrait { max-width: 100%; }
+ .about-tool-items > div { min-width: 0; }
+}
+@media(prefers-reduced-motion:reduce) {
+ html {scroll-behavior:auto;}
+ .project-card, .project-visual img, .tool-brand-chip, .footer-socials a, .ds-gallery-note { transition:none!important; transform:none!important; }
+}
+/* Harmonized section rhythm; class-specific overrides preserve each page's grid. */
+.wz-case .wz-section { padding-top:clamp(60px,7vw,88px); padding-bottom:clamp(60px,7vw,88px); }
+.st-case .st-section { padding-top:clamp(60px,7vw,86px); padding-bottom:clamp(60px,7vw,86px); }
+.au-page .au-section { padding-top:clamp(64px,7vw,84px); }
+.ds-page .ds-section { padding-top:clamp(60px,7vw,85px); padding-bottom:clamp(60px,7vw,85px); }
+.mw-page .mw-section { padding-top:clamp(60px,7vw,80px); padding-bottom:clamp(60px,7vw,80px); }
+@media(max-width:760px){
+ .wz-case .wz-section,.st-case .st-section,.ds-page .ds-section { padding-top:58px; padding-bottom:58px; }
+ .mw-page .mw-section { padding-top:58px!important; padding-bottom:58px!important; }
+}

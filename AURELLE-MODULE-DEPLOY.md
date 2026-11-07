@@ -1,0 +1,1 @@
+Aurelle module presentation update only. Upload zlaata.html, aurelle-modules-showcase.css, aurelle-modules-showcase.js to the repository root. Existing screenshots under assets/aurelle remain unchanged. Order Management section and scripts are unchanged.

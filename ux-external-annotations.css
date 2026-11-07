@@ -1,0 +1,64 @@
+/* Shared Aurelle-style external annotation cards. Only applied in three specified showcases. */
+:root{--ux-connector:#8d5fc2;--ux-card-edge:#ddd2ed;--ux-card-focus:#f7f2fd}
+/* Screens remain unmodified and fully contained in their existing device frames. */
+.st-slide-experience .st-slide-grid,.mw-showcase,.wz-wfh-step-content{position:relative;isolation:isolate}
+.ux-link-layer{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:3}
+.ux-link-layer path{fill:none;stroke:var(--ux-connector);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;opacity:.38;stroke-dasharray:4 5;transition:opacity .22s,stroke-width .22s}
+.ux-link-layer path.is-active{stroke-width:2.2;opacity:.9;stroke-dasharray:none}
+/* External cards, never overlaid on the screenshots. */
+.st-slide-experience .st-annotation-list{display:grid;gap:10px;position:relative;z-index:4}
+.st-slide-experience .st-annotation-choice,.mw-showcase .mw-annotation{display:flex;align-items:flex-start;gap:12px;text-align:left;padding:14px 16px;border-radius:10px;border:1px solid #e4e0ea;background:#fff;width:100%;transition:border-color .2s,background .2s,box-shadow .2s;cursor:pointer}
+.st-slide-experience .st-annotation-choice.is-active,.mw-showcase .mw-annotation.active,.wz-wfh-step .ux-wfh-card.is-active{border-color:var(--ux-connector);background:var(--ux-card-focus);box-shadow:0 1px 10px #52377912}
+.st-slide-experience .st-annotation-choice>strong{flex:1;min-width:0;font-weight:750}
+.st-slide-experience .st-annotation-choice{display:grid;grid-template-columns:34px minmax(0,1fr);align-items:start}
+.st-slide-experience .st-annotation-choice>.ux-inline-explanation{grid-column:2}
+.ux-inline-explanation{display:grid;gap:7px;line-height:1.45;font-size:.77rem;color:#51505b;min-width:0}
+.ux-inline-explanation>span{display:block;overflow-wrap:anywhere}
+.ux-inline-explanation b{display:block;font-size:.67rem;letter-spacing:.055em;text-transform:uppercase;color:#6f498e;margin-bottom:2px}
+.st-slide-experience .st-hotspot,.mw-showcase .mw-hotspot{z-index:5}
+.mw-showcase .mw-annotations{display:grid;gap:10px;position:relative;z-index:4}
+.mw-showcase .mw-annotation{align-items:start;box-shadow:none;min-height:0}
+.mw-showcase .mw-annotation>span:last-child{display:grid;gap:7px;min-width:0}
+.mw-showcase .mw-annotation .ux-inline-explanation{font-weight:400}
+.mw-showcase .mw-annotation small{line-height:1.5}
+/* WFH section only. Feedback Before/After is deliberately untouched. */
+.wz-case .wz-wfh-visual{position:relative;overflow:hidden;min-width:0}
+.wz-case .wz-wfh-visual img{height:auto;max-width:100%;object-fit:contain}
+.wz-case .ux-wfh-cards{align-self:center;min-width:0;position:relative;z-index:4}
+.wz-case .ux-wfh-card{display:flex;width:100%;text-align:left;gap:14px;padding:18px;border:1px solid var(--ux-card-edge);border-radius:10px;background:#fff;font:inherit;cursor:pointer;position:relative;z-index:4;transition:border-color .2s,background .2s}
+.wz-case .ux-card-number{flex:0 0 34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#efe4fa;color:#694195;font-size:.78rem;font-weight:800}
+.wz-case .ux-card-body{display:grid;gap:12px;min-width:0}
+.wz-case .ux-card-row{display:grid;gap:3px;font-size:.82rem;color:#4b4751;line-height:1.5}
+.wz-case .ux-card-row b{color:#694195;letter-spacing:.05em;font-size:.7rem;text-transform:uppercase}
+.wz-case .ux-wfh-anchor{position:absolute;transform:translate(-50%,-50%);z-index:5;background:#7443a3;border:2px solid white;color:white;border-radius:100px;width:30px;height:30px;font-weight:800;box-shadow:0 2px 9px #552b9866;cursor:pointer}
+.wz-case .ux-wfh-anchor:focus-visible,.wz-case .ux-wfh-card:focus-visible,.mw-showcase .mw-annotation:focus-visible,.st-slide-experience .st-annotation-choice:focus-visible{outline:3px solid #8651c0;outline-offset:3px}
+@media(max-width:900px){.ux-link-layer{display:none!important}.st-slide-experience .st-annotation-choice,.mw-showcase .mw-annotation,.wz-case .ux-wfh-card{padding:12px}.wz-case .wz-wfh-step-content{grid-template-columns:1fr}.wz-case .ux-wfh-cards{width:100%}}
+@media(prefers-reduced-motion:reduce){.ux-link-layer path,.st-slide-experience .st-annotation-choice,.mw-showcase .mw-annotation,.wz-case .ux-wfh-card{transition:none!important}}
+
+/* AUDIT FIX: semantic annotation structure; no overlapping text or grid columns. */
+.ux-connector-root{position:relative;isolation:isolate;min-width:0}
+.ux-connector-root .ux-link-layer{z-index:2;pointer-events:none;overflow:visible}
+.st-slide-experience #st-annotation-list .st-annotation-choice{display:grid!important;grid-template-columns:34px minmax(0,1fr)!important;grid-template-areas:"index heading" ". rationale";column-gap:12px;row-gap:3px;align-items:start!important;min-width:0;white-space:normal}
+.st-slide-experience #st-annotation-list .st-annotation-index{grid-area:index}
+.st-slide-experience #st-annotation-list .st-annotation-choice>strong{grid-area:heading;min-width:0;overflow-wrap:break-word;line-height:1.4}
+.st-slide-experience #st-annotation-list .ux-inline-explanation{grid-area:rationale;min-width:0}
+.ux-inline-explanation{display:none!important;grid-template-columns:minmax(0,1fr);gap:9px;min-width:0;line-height:1.5;overflow-wrap:break-word}
+.st-slide-experience #st-annotation-list .st-annotation-choice.is-active .ux-inline-explanation,.mw-showcase .mw-annotation.active .ux-inline-explanation{display:grid!important}
+.ux-inline-explanation>span{display:block;min-width:0;font-weight:400;letter-spacing:normal;font-size:.81rem;line-height:1.55;color:#4d4850}
+.ux-inline-explanation b{display:block;font-size:.66rem;letter-spacing:.075em;text-transform:uppercase;color:#76528e;margin:0 0 3px}
+.mw-showcase .mw-annotation{display:grid!important;grid-template-columns:32px minmax(0,1fr);gap:12px!important;align-items:start!important;min-width:0}
+.mw-showcase .mw-annotation .ux-mw-copy{display:block;min-width:0}
+.mw-showcase .mw-annotation .ux-mw-copy>strong{display:block!important;min-width:0;line-height:1.4;margin-bottom:4px;overflow-wrap:break-word}
+.mw-showcase .mw-annotation .ux-inline-explanation{min-width:0}
+.mw-showcase .mw-annotation .ux-inline-explanation>span{font-size:.79rem;color:#554c4a}
+.mw-showcase .mw-annotation .ux-inline-explanation b{color:#b45d40}
+.st-slide-experience .st-slide-grid,.mw-showcase{min-width:0}
+.wz-case .ux-wfh-screen-anchor{position:relative;width:100%;line-height:0}
+.wz-case .ux-wfh-screen-anchor img{display:block;width:100%;height:auto;object-fit:contain}
+.wz-case .ux-wfh-screen-anchor .ux-wfh-anchor{line-height:1.1;transform:translate(-50%,-50%)}
+.wz-case .ux-wfh-card.is-active{border-color:#3262ff!important;background:#f4f7ff!important}
+.wz-case .ux-wfh-card .ux-card-row b{color:#3262ff}
+.wz-case .ux-wfh-anchor{background:#3262ff!important}
+/* cards remain outside screenshot; connectors disappear once cards stack below */
+@media(max-width:900px){.ux-link-layer{display:none!important}.st-slide-experience #st-annotation-list .st-annotation-choice,.mw-showcase .mw-annotation{max-width:100%;min-width:0}.wz-case .wz-wfh-step-content{grid-template-columns:minmax(0,1fr)!important}}
+@media(prefers-reduced-motion:reduce){.ux-link-layer path,.mw-showcase .mw-annotation,.st-slide-experience .st-annotation-choice{transition:none!important}}

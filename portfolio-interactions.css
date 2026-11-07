@@ -1,16 +1,16 @@
 /* Premium portfolio motion enhancements — decorative only, no layout/IA changes. */
 :root { --portfolio-ease: cubic-bezier(.22, 1, .36, 1); --portfolio-hover-duration: 360ms; }
 /* Keep entire new device mockup visible, including outer studio framing. */
-.project-list .project-visual:has(img[src^="assets/project-previews/"]) {
+.project-list .project-visual:has(img[src^="assets/previews/"]) {
   background:#101013; overflow:hidden; isolation:isolate;
 }
-.project-list .project-visual img[src^="assets/project-previews/"] {
+.project-list .project-visual img[src^="assets/previews/"] {
   display:block; width:100%; height:100%; object-fit:contain; object-position:center;
   transform:scale(1); backface-visibility:hidden;
   transition:transform 650ms var(--portfolio-ease),filter 450ms ease;
 }
-.project-list .project-card:hover .project-visual img[src^="assets/project-previews/"],
-.project-list a.project-card:focus-visible .project-visual img[src^="assets/project-previews/"] {
+.project-list .project-card:hover .project-visual img[src^="assets/previews/"],
+.project-list a.project-card:focus-visible .project-visual img[src^="assets/previews/"] {
   transform:scale(1.035);
 }
 /* Gentle image treatment across cards without altering the card geometry. */
@@ -35,12 +35,12 @@ html.portfolio-motion-ready .portfolio-motion-enter.portfolio-motion-visible {op
 @keyframes portfolio-fade-out {to{opacity:0.96;}}
 @keyframes portfolio-fade-in {from{opacity:0.94;}to{opacity:1;}}
 @media(max-width:760px) {
-  .project-list .project-card:hover .project-visual img[src^="assets/project-previews/"]{transform:none;}
+  .project-list .project-card:hover .project-visual img[src^="assets/previews/"]{transform:none;}
   .project-list a.project-card:hover .project-view{transform:none;}
 }
 @media(prefers-reduced-motion:reduce){
  html{scroll-behavior:auto!important;}
- .project-list .project-visual img[src^="assets/project-previews/"],
+ .project-list .project-visual img[src^="assets/previews/"],
  .project-list .project-card .project-visual,
  .project-list .project-card .project-view,
  .site-header .nav-links a,.btn,.nav-resume,.footer-socials a,.back-link,

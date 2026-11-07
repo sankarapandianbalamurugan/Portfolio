@@ -1,0 +1,84 @@
+/* Aurelle Order Management only: no global or other workstream overrides. */
+#orders .au-order-frame{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(315px,.88fr);border:1px solid #e7e4eb;border-radius:18px;overflow:hidden;background:#fff;min-width:0;box-shadow:0 16px 40px rgba(34,20,55,.04)}
+#orders .au-order-stage{min-width:0;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(145deg,#f7f6f9,#eeeaf3);border-right:1px solid #e7e4eb;padding:clamp(15px,2.2vw,28px);gap:14px}
+#orders .au-order-stage-top{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:.68rem;font-weight:750;letter-spacing:.09em;color:#70667c}
+#orders .au-order-screen{position:relative;width:100%;min-width:0;line-height:0;border:1px solid #e5e0ea;border-radius:9px;overflow:hidden;background:#fff;box-shadow:0 16px 35px rgba(30,20,45,.13)}
+#orders .au-order-screen-img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;transition:opacity .22s ease;filter:none}
+#orders .au-order-screen-img.is-switching{opacity:.55}
+#orders .au-order-hotspots{position:absolute;inset:0;pointer-events:none}
+#orders .au-order-pin{position:absolute;z-index:2;transform:translate(-50%,-50%);pointer-events:auto;display:grid;place-items:center;width:28px;height:28px;padding:0;border:2px solid #fff;border-radius:50%;background:#5e3194;color:white;box-shadow:0 2px 9px rgba(37,15,70,.28);font-size:.76rem;font-weight:750;cursor:pointer;transition:transform .18s,background .18s}
+#orders .au-order-pin:hover,#orders .au-order-pin.is-active{background:#9d55dd;transform:translate(-50%,-50%) scale(1.12)}
+#orders .au-order-zoom{align-self:flex-end;background:#fff;border:1px solid #e0dce7;border-radius:9px;padding:10px 14px;font-weight:650;font-size:.82rem;color:#352d3e;cursor:pointer;transition:background .18s}
+#orders .au-order-zoom:hover{background:#f5f0fa}
+#orders .au-order-story{min-width:0;padding:clamp(22px,3vw,40px);display:flex;flex-direction:column}
+#orders .au-order-tag{font-size:.72rem;color:#726380;font-weight:750;letter-spacing:.08em;margin-bottom:12px}
+#orders .au-order-title{font-size:clamp(1.45rem,2.3vw,2.3rem);line-height:1.12;letter-spacing:-.045em;margin:0 0 22px}
+#orders .au-order-problem,#orders .au-order-choice{display:grid;gap:6px;margin:0 0 15px;color:#4b4850;font-size:.92rem;line-height:1.55}
+#orders .au-order-problem strong,#orders .au-order-choice strong,#orders .au-order-benefit strong{font-size:.69rem;color:#664c86;letter-spacing:.085em}
+#orders .au-order-annotation-list{display:grid;gap:8px;margin:12px 0 22px}
+#orders .au-order-annotation-button{font:inherit;display:flex;gap:12px;text-align:left;width:100%;padding:12px;border:1px solid #e8e5ec;border-radius:11px;background:#fff;color:#26202c;cursor:pointer;transition:background .2s,border-color .2s}
+#orders .au-order-annotation-button:hover,#orders .au-order-annotation-button.is-active{background:#f9f5fd;border-color:#bc9cdd}
+#orders .au-order-annotation-number{flex:0 0 29px;width:29px;height:29px;display:grid;place-items:center;border-radius:50%;background:#eee5f8;color:#5e3194;font-size:.7rem;font-weight:800}
+#orders .au-order-annotation-button>span:last-child{display:grid;gap:4px;min-width:0}
+#orders .au-order-annotation-button strong{font-size:.88rem}
+#orders .au-order-annotation-description{font-size:.81rem;color:#646069;line-height:1.5}
+#orders .au-order-benefit{padding:16px;background:#f8f5fc;border-radius:11px;margin-top:auto}
+#orders .au-order-benefit p{margin:5px 0 0;color:#4b4356;font-size:.87rem;line-height:1.5}
+#orders .au-order-navigation{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:24px}
+#orders .au-order-navigation button{border:1px solid #dcd7e3;background:#fff;border-radius:9px;min-height:42px;padding:10px 13px;font-size:.83rem;font-weight:700;cursor:pointer}
+#orders .au-order-navigation button:hover{background:#f5f1f8}
+#orders .au-order-page{font-size:.75rem;color:#716c76;font-weight:700;white-space:nowrap}
+#orders .au-order-pagination{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:15px}
+#orders .au-order-pagination button{width:11px;height:11px;min-height:11px;padding:0;border:0;border-radius:50%;background:#dad5df;cursor:pointer}
+#orders .au-order-pagination button[aria-current="true"]{background:#5e3194;outline:2px solid #e8dbf6;outline-offset:2px}
+#orders .au-order-evidence{margin:15px 0 26px;color:#807a84;font-size:.78rem}
+#orders .au-order-insights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#orders .au-order-insights article{border:1px solid #e7e5e9;border-radius:14px;padding:22px;min-width:0}
+#orders .au-order-insights article>span{display:block;color:#6e4a96;font-size:.69rem;font-weight:800;letter-spacing:.075em;margin-bottom:12px}
+#orders .au-order-insights h3{font-size:1.07rem;letter-spacing:-.025em;margin:0 0 9px}
+#orders .au-order-insights p{margin:0;font-size:.87rem;line-height:1.62;color:#67636b}
+#orders button:focus-visible{outline:3px solid #8c5cb4;outline-offset:3px}
+.au-order-lightbox{position:fixed;z-index:10001;inset:0;background:rgba(11,9,15,.94);display:grid;place-items:center;padding:48px 20px 20px}
+.au-order-lightbox[hidden]{display:none}
+.au-order-lightbox img{max-width:95vw;max-height:88vh;height:auto;width:auto;object-fit:contain}
+.au-order-lightbox>button{position:absolute;right:16px;top:12px;padding:9px 14px;border-radius:8px;color:#111;background:white;border:1px solid #ddd;cursor:pointer}
+@media(max-width:960px){#orders .au-order-frame{grid-template-columns:1fr}#orders .au-order-stage{border-right:0;border-bottom:1px solid #e7e4eb}#orders .au-order-screen{max-width:820px;margin:0 auto}#orders .au-order-story{padding:25px}}
+@media(max-width:600px){#orders .au-order-stage{padding:12px}#orders .au-order-story{padding:18px}#orders .au-order-insights{grid-template-columns:1fr}#orders .au-order-pin{width:23px;height:23px;font-size:.7rem}#orders .au-order-navigation{gap:7px}#orders .au-order-navigation button{padding:9px 10px}}
+@media(prefers-reduced-motion:reduce){#orders .au-order-screen-img,#orders .au-order-pin,#orders .au-order-annotation-button,#orders .au-order-zoom{transition:none!important}}
+
+/* 2026-11: Order Management-only presentation refinement. Screenshot pixels are never altered. */
+#orders .au-order-frame{position:relative;isolation:isolate;grid-template-columns:minmax(0,1.16fr) minmax(320px,.84fr);overflow:visible;align-items:stretch}
+#orders .au-order-stage{position:relative;justify-content:flex-start;min-width:0;padding:clamp(16px,2vw,27px) clamp(20px,2.3vw,34px);background:#f6f4f8;border-radius:17px 0 0 17px;overflow:visible}
+#orders .au-order-stage-top{width:100%;max-width:100%}
+#orders .au-order-screen{height:clamp(320px,36vw,520px);width:100%;display:flex;align-items:center;justify-content:center;flex:0 0 auto;overflow:hidden;border-radius:10px;background:#fff;box-shadow:0 14px 32px rgba(30,20,45,.09)}
+#orders .au-order-screen-img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;flex:none}
+#orders .au-order-hotspots{inset:0;overflow:hidden}
+/* Small, clickable screen anchors replace the numbered bubbles that obscured actual UI. */
+#orders .au-order-pin{width:13px;height:13px;font-size:0;color:transparent;background:#fff;border:3px solid #75449f;box-shadow:0 0 0 3px rgba(117,68,159,.14);transform:translate(-50%,-50%);transition:background .18s,box-shadow .18s,transform .18s}
+#orders .au-order-pin:hover,#orders .au-order-pin.is-active{background:#75449f;box-shadow:0 0 0 5px rgba(117,68,159,.18);transform:translate(-50%,-50%) scale(1.08)}
+#orders .au-order-story{position:relative;z-index:3;background:#fff;border-radius:0 17px 17px 0;padding:clamp(22px,2.5vw,36px)}
+#orders .au-order-annotation-list{gap:11px}
+#orders .au-order-annotation-button{position:relative;background:#fff;border:1px solid #e8e5ec;min-width:0}
+#orders .au-order-annotation-button.is-active{border-color:#9564bf;box-shadow:0 2px 12px rgba(95,49,148,.06)}
+#orders .au-order-annotation-number{flex:0 0 30px}
+#orders .au-order-connectors{position:absolute;inset:0;overflow:visible;pointer-events:none;z-index:4;width:100%;height:100%}
+#orders .au-order-connector{fill:none;stroke:#b6a5cb;stroke-width:1.35;stroke-dasharray:3.5 4;opacity:.65;vector-effect:non-scaling-stroke;transition:stroke .2s,opacity .2s}
+#orders .au-order-connector.is-active{stroke:#6d329e;stroke-width:2;stroke-dasharray:none;opacity:1}
+#orders .au-order-connector-end{fill:#fff;stroke:#9c73bc;stroke-width:1.5;vector-effect:non-scaling-stroke}
+#orders .au-order-connector-end.is-active{fill:#6d329e;stroke:#fff}
+@media(max-width:960px){
+ #orders .au-order-frame{grid-template-columns:minmax(0,1fr);overflow:hidden}
+ #orders .au-order-stage{border-radius:17px 17px 0 0;padding:18px}
+ #orders .au-order-story{border-radius:0 0 17px 17px;padding:22px}
+ #orders .au-order-screen{height:clamp(270px,58vw,530px);max-width:100%}
+ #orders .au-order-connectors{display:none}
+ #orders .au-order-annotation-list{margin-top:15px}
+ #orders .au-order-annotation-button{width:100%}
+}
+@media(max-width:600px){
+ #orders .au-order-stage{padding:12px;gap:10px}
+ #orders .au-order-screen{height:clamp(210px,69vw,380px)}
+ #orders .au-order-story{padding:18px}
+ #orders .au-order-pin{width:12px;height:12px;border-width:2px}
+}
+@media(prefers-reduced-motion:reduce){#orders .au-order-connector,#orders .au-order-pin{transition:none!important}}
